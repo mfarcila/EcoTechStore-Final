@@ -12,5 +12,13 @@
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Certificados TLS 1.2 / Pinning: Activo (RNF02) - Logs de firma digital e IP: Sincronizados (Ley 527)" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="48dp"
+            android:text="Cerrar Sesión" />
     </LinearLayout>
 </ScrollView>

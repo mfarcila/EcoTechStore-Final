@@ -12,6 +12,14 @@
                 <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GreenTech Bogota S.A.S." />
             </com.google.android.material.textfield.TextInputLayout>
             <Button style="@style/EcoButtonPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:backgroundTint="@color/seller_primary" android:text="Guardar Perfil de Vendedor" />
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:minHeight="48dp"
+                android:text="Cerrar Sesión" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </ScrollView>

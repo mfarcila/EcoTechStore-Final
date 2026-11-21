@@ -4,19 +4,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-        <TextView style="@style/EcoTitleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Articulos en tu Carrito (CRUD Dinamico)" />
-        <LinearLayout android:id="@+id/cartItemsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="vertical" />
-        <TextView android:id="@+id/tvCartTotal" style="@style/EcoTitleText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Total Carrito: $ 0 COP" android:textColor="@color/buyer_primary" />
-        <com.google.android.material.card.MaterialCardView style="@style/EcoCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:contentPadding="16dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-                <TextView style="@style/EcoTitleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Geolocalizacion de Entrega (GPS - RF04)" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Ubicacion capturada: Bogota D.C. (Lat: 4.658, Lng: -74.093)" android:textColor="@color/eco_text_secondary" />
-                <FrameLayout android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginTop="8dp" android:background="@color/buyer_surface_tint">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="[ Google Maps SDK View - Pin Entrega Activo ]" android:textColor="@color/buyer_primary_dark" android:textStyle="bold" />
-                </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/EcoTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artículos en tu Carrito (CRUD Dinámico)" />
+
+        <LinearLayout
+            android:id="@+id/cartItemsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tvCartTotal"
+            style="@style/EcoTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Total Carrito: $ 0 COP"
+            android:textColor="@color/buyer_primary" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/EcoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:contentPadding="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/EcoTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geolocalización de Entrega (GPS)" />
+                <TextView
+                    android:id="@+id/tvGpsStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Ubicación no capturada aún."
+                    android:textColor="@color/eco_text_secondary" />
+                <Button
+                    android:id="@+id/btnCaptureGps"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:minHeight="48dp"
+                    android:text="Capturar mi Ubicación GPS" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
-        <Button android:id="@+id/btnProceedToPayment" style="@style/EcoButtonPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:backgroundTint="@color/buyer_primary" android:text="Ir a la Pasarela de Pagos" />
+
+        <Button
+            android:id="@+id/btnProceedToPayment"
+            style="@style/EcoButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/buyer_primary"
+            android:text="Ir a la Pasarela de Pagos" />
     </LinearLayout>
 </ScrollView>

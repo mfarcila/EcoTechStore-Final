@@ -16,6 +16,14 @@
             <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:checked="true" android:minHeight="48dp" android:text="Habilitar ingreso con Biometria (Huella)" />
             <Button style="@style/EcoButtonPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:backgroundTint="@color/buyer_primary" android:text="Actualizar Datos" />
             <Button style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="48dp" android:text="Eliminar Cuenta (Habeas Data - Ley 1581)" android:textColor="@color/eco_error" />
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:minHeight="48dp"
+                android:text="Cerrar Sesión" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </ScrollView>
